@@ -1,0 +1,161 @@
+body {
+    background-image:url("../images/carrental.jpg");
+    background-size: cover;
+    margin: 0 auto;
+    font-family: 'Manuale', serif;
+
+}
+
+header {
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between; 
+    background-color:white;
+    padding-left:50px;
+    padding-right:50px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-end;
+    text-align: right;
+}
+
+.columnFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    padding-left: 10px;
+}
+
+.time {
+    font-size: 130%;
+}
+
+.logo {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
+h1 {
+    margin:0;
+}
+
+footer{
+    display: flex;
+    flex-direction:row;
+    bottom: 0;
+    height:10%;
+    width:100%;
+    position:fixed;
+    background-color:white;
+    padding-left:50px;
+    padding-right:50px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(197, 197, 230,0.85);
+    width:100%;
+    height:100vh;
+    
+}
+
+.orderRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:60%;
+    font-size: 105%;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.search {
+    font-size: 120%;
+    margin-top:1%;
+    margin-left:1%;
+} 
+
+.typeColumn {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-left: 25px;
+    padding-top:50px;
+    width:50%;
+}
+
+.typeLabel{
+    display:flex;
+    flex-direction: row;
+    font-size: 120%;
+    margin-top:1%;
+    margin-left:1%;
+}
+
+.orderLabel{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 150%;
+}
+
+.outputContainer{
+    background-color:white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width:50%;
+    height:60%;
+}
+
+.columnContent {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-left: 25px;
+    padding-top:50px;
+    width:20%;
+}
+
+.searchResult {
+    background-color:rgb(196, 196, 196);
+    width:80%;
+    padding-left:5px;
+}
+
+.inputBoxes {
+    width:20%;
+}
+
+input[type=text] {
+    width:80%;
+}
+
+input[type=number] {
+    width:35%;
+}
+
+.carType{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+}
+
+.center {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}

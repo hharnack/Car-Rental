@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dodgy Breaks Car Rental</title>
+    <link href="https://fonts.googleapis.com/css?family=Manuale" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <script src="../javascript/RentalClients.js"></script>
+    <script src="../javascript/js.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/carlogo.png" alt="car logo" width="160" height="60">
+        </div>
+        <div class="column">
+            <h1>Dodgy Brakes Car Rental</h1>
+            <div id="time" class="time">
+            </div>
+        </div>
+    </header>
+
+    <div class="row">
+        <div class="content">
+            <div class="columnContent" id="searchContainer">
+                <label class="search">Search By Last Name:
+                    <input type="text" id="textInput" onkeyup="search()">
+                </label>
+                <div id="searchResult" class="searchResult">
+                </div>
+            </div>
+
+            <div class="columnContent inputBoxes">
+                <label class="search">Last Name:<br>
+                    <input type="text" id="lastName" disabled required>
+                </label>
+                <label class="search">First Name:<br>
+                    <input type="text" id="firstName" disabled required>
+                </label>
+                <label class="search">Address:<br>
+                    <input type="text" id="address" disabled required>
+                </label>
+                <label class="search">State/Prov:<br>
+                    <input type="text" id="state" disabled required>
+                </label>
+                <label class="search">Email:<br>
+                    <input type="text" id="email" disabled required>
+                </label>
+                <label class="search">Phone:<br>
+                    <input type="text" id="phone" disabled required>
+                </label>
+            </div>
+
+            <div class="outputContainer" style="display:none;" id="output">
+
+                <div class="orderLabel">
+                    Your Order:
+                </div><br>
+                <div class="orderRow">
+                    <div id="orderItems">
+                        order
+                    </div>
+                    <div id="totals">
+                        totals
+                    </div>
+                </div>
+                <div>
+                    <input type="button" value="Edit" id="edit" onclick="editForm()">
+                </div>
+
+            </div>
+            <div class="typeColumn" id="carType">
+                <div class="typeLabel">Select a Car Type:</div>
+                <div class="carType">
+                    <label for="compact">
+                        <input type="radio" id="compact" name="carType" value="Compact:15">Compact: $15/day
+                    </label>
+                    <label for="mid">
+                        <input type="radio" id="mid" name="carType" value="Mid-Size:20">Mid-Size: $20/day
+                    </label>
+                    <label for="luxury">
+                        <input type="radio" id="luxury" name="carType" value="Luxury:35">Luxury: $35/day
+                    </label>
+                    <label for="vanTruck">
+                        <input type="radio" id="vanTruck" name="carType" value="Van/Truck:40">Van/Truck: $40/day
+                    </label>
+                </div>
+                <div class="carType">
+                    <img src="../images/compact.png" alt="Compact Car" width="150" height="80">
+                    <img src="../images/midsize.png" alt="Mid Size Car" width="150" height="90">
+                    <img src="../images/luxury.png" alt="Luxury Car" width="160" height="70"
+                        style="padding-top: 2%;">
+                    <img src="../images/van.png" alt="Van" width="150" height="90">
+                </div><br><br>
+                <div class="typeLabel">
+                    Extra Features:
+                </div>
+                <div class="carType">
+                    <label for="rack">
+                        <input type="checkbox" id="rack" name="options" value="Roof/Bicycle Rack">Roof Rack or Bicycle
+                        Rack: $5/day
+                    </label>
+                    <label for="gps">
+                        <input type="checkbox" id="gps" name="options" value="GPS">GPS: $10/day
+                    </label>
+                    <label for="child">
+                        <input type="checkbox" id="child" name="options" value="Child Seat">Child Seat: FREE
+                    </label>
+                </div><br><br>
+                <div class="typeLabel" style="width:100%;">
+                    Number of Days Renting:
+                </div>
+                <div>
+                    <input type="number" id="days" min="1" max="30">
+                </div><br><br><br>
+
+                <div>
+                    <input type="submit" value="Order Rental" id="order" onclick="calcRental()">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="columnFooter">
+            <div>Phone Number:</div>
+            <div>Address: </div>
+        </div>
+        <div class="columnFooter">
+            <div>123-456-6789</div>
+            <div>123 Street, Clagary AB</div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
